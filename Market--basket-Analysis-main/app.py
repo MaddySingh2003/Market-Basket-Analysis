@@ -3,8 +3,11 @@ import os
 import time
 
 # --- Page Configuration ---
-st.set_page_config(page_title="Market Basket Dashboard", layout="wide")
-
+st.set_page_config(
+    page_title="MBA Insights",
+    page_icon="icon/favicon.png",  # ✅ clean + portable
+    layout="wide"
+)
 # --- Session State Initialization ---
 if "slide_index" not in st.session_state:
     st.session_state.slide_index = 0
@@ -92,7 +95,9 @@ with col2:
             st.session_state.run_autoplay = True
 
 # --- Image List ---
-image_folder = "D:\\Aroy\\Market--basket-Analysis-main\\images"
+import os
+current_dir=os.path.dirname(os.path.abspath(__file__))
+image_folder=os.path.join(current_dir,"images")
 image_files = sorted([img for img in os.listdir(image_folder) if img.endswith(("png", "jpg", "jpeg"))])
 
 # --- Chart Display ---
