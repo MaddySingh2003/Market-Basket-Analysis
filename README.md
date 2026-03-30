@@ -2,8 +2,9 @@
 
 This repository contains a Python-based solution for Market Basket Analysis using Association Rule Mining, specifically the **Apriori algorithm**. It analyzes transaction data to find interesting patterns, such as frequently bought products or associations between different items in a market basket.
 
-#LIVE on AWS
-http://mba-docker-env.eba-ztdubmfd.ap-south-1.elasticbeanstalk.com/
+## LIVE on AWS
+ 
+ http://mba-docker-env.eba-ztdubmfd.ap-south-1.elasticbeanstalk.com/
 
 ## 📊 Overview
 
